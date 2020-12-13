@@ -16,15 +16,15 @@ Run `macrayon` with no arguments to load macros from `MACROS` in the current dir
 ```
 ## vectorSum # v1 # v2 ## ([v1[0] + v2[0], v1[1] + v2[1]]) ##
 
-## vectorDot # v1 # v1 ## (v1[0] * v2[0] + v1[1] * v2[1])) ##
+## vectorDot # v1 # v1 ## (v1[0] * v2[0] + v1[1] * v2[1]) ##
 ```
 
 `main.macry`:
 ```
 function main() {
-	v1 = [0, 1];
-	v2 = [2, 3];
-	dotProduct = ##vectorDot#v1#v2##;
+	vector1 = [0, 1];
+	vector2 = [2, 3];
+	dotProduct = ##vectorDot#vector1#vector2##;
 	print(dotProduct);
 }
 ```
@@ -34,7 +34,7 @@ Running `macrayon` generates `main.cry`:
 function main() {
 	vector1 = [0, 1];
 	vector2 = [2, 3];
-	dotProduct = (vector1[0] * vector2[0] + vector1[1] * vector2[1]));
+	dotProduct = (vector1[0] * vector2[0] + vector1[1] * vector2[1]);
 	print(dotProduct);
 }
 ```

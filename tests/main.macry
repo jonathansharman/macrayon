@@ -1,0 +1,6 @@
+function main() {
+	vector1 = [0, 1];
+	vector2 = [2, 3];
+	dotProduct = ##vectorDot#vector1#vector2##;
+	print(dotProduct);
+}
